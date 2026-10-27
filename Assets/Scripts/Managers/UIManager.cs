@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; // Sahne resetlemek için şart
 using UnityEngine.UI; // Text ve Button için
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject failPanel;
 
     [Header("HUD Elemanları")]
-    [SerializeField] private Text levelText;
-    [SerializeField] private Text scoreText; // İleride skor tutarsan
+    [SerializeField] private TextMeshProUGUI levelText;
+    [SerializeField] private TextMeshProUGUI scoreText;// İleride skor tutarsan
 
     private void Awake()
     {
